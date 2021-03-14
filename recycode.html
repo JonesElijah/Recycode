@@ -1,4 +1,4 @@
--<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,10 +49,8 @@ body, html {
 }
 </style>
 <body>
-<<<<<<< Updated upstream
 
 =======
->>>>>>> Stashed changes
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
@@ -76,80 +74,6 @@ body, html {
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">RECYCODE
   </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT OUR WEBSITE</h3>
-  <p class="w3-center"><em>WE LOVE OUR PLANET!</em></p>
-  <p>We notice that many people didn't realize there are different numbers on the recycling symbol. Each number have a  specific meaning, they represent the materials contain in the plastic. Different plastics have different ways to dispose and different length of time to for the plastic to dissolve. Inappropriate ways to dispose the plastic may bring serious effect to the envoirment. Our goal is to inform user the meaning for each number on the symbol, time for the plastic to dissolve, and the what are the outcomes if we inappropriately dispose each type of plastic.</p>
-  <div class="w3-row">
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with SCAN Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-black w3-wide">SCAN</span>
-  </div>
-</div>
-
-<!-- Container (SCAN Section) -->
-<div class="w3-content w3-container w3-padding-64" id="scan">
-  <h3 class="w3-center">We love to hear from you guys!!!</h3>
-
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to Top</a>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
-
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-<<<<<<< Updated upstream
-
-</body>
-=======
-<button type="button" onclick="init()">Start</button>
-<div id="webcam-container"></div>
-<div id="label-container"></div>
 </div>
 <div>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
@@ -207,5 +131,94 @@ function toggleFunction() {
           }
       }
   </script>
->>>>>>> Stashed changes
+  <div class="w3-center" id="webcam-container"></div>
+  <div class="w3-center" id="label-container"></div>
+  <div class="w3-content w3-container w3-padding-64" id="scan">
+<h3 class="w3-center">Different Kinds of Plastic</h3><p><p style="color:blue;">Number 1 - PETE - Poly(ethylene terephthalate) </p>
+Containers for:
+
+<br>Soda bottles, water bottles, cooking oil bottles, and medicine containers.
+<br><br><p style="color:blue;">Number 2 - HDPE - High-density Polyethylene </p>
+Containers for:<br> laundry/dish detergent, milk, shampoo, conditioner, also various toys, and grocery bags.<br><br><p style="color:blue;">Number 3 - V - Poly(vinyl chloride) </p>
+Containers for:
+<br>Pipes, shower curtains, clear medical tubing, vinyl dashboards and seat covers.<br><br><p style="color:blue;">Number 4 - LDPE - Low-density Polyethylene </p>
+Containers for:
+<br>Wrapping films, grocery bags, and sandwich bags. Note that most cities accept plastics #4 for recycling, but NOT grocery bags (these can stuck in the sorting machines).<br><br><p style="color:blue;">Number 5 - PP - Polypropylene </p>
+Containers for:<br>Tupperware, yogurt tubs, (orange) medicine containers, and plastic caps of soda bottles.<br><br><p style="color:blue;">Number 6 - PS - Polystyrene </p>
+Containers for:<br>Plastic cups, disposable cutlery and cups (clear and colored), coffee cups, packing peanuts, Styrofoam insulation. Note that most cities accept plastics #6 for recycling, but NOT styrofoam, peanuts, etc. (these are contaminated by food easily).<br><br><p style="color:blue;"> Number 7 - OTHER </p>
+Containers for:
+<br>They are made of any combination of 1-6 or another, less commonly used plastic. Biodegradable plastics, like cups made of corn, are NOT recyclable. Though they have the recycling #7, this only means "other plastics", including non-petroleum based.
+</p>
+
+
+</div>
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT RECYCODE</h3>
+  <p>We notice that many people didn't realize there are different numbers on the recycling symbol. Each number have a  specific meaning, they represent the materials contain in the plastic. Different plastics have different ways to dispose and different length of time to for the plastic to dissolve. Inappropriate ways to dispose the plastic may bring serious effect to the envoirment. Our goal is to inform user the meaning for each number on the symbol, time for the plastic to dissolve, and the what are the outcomes if we inappropriately dispose each type of plastic.</p>
+  <div class="w3-row">
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with SCAN Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min"></div>
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide"><button type="button" onclick="init()">Start Scan</button></span>
+  </div>
+</div>
+
+
+
+
+<!-- Container (SCAN Section) -->
+<div class="w3-content w3-container w3-padding-64" id="scan">
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back to Top</a>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</div>
+
 </html>
